@@ -1,8 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
-
-:root {
-
-}
+@import "https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap";
 
 * {
     margin: 0;
@@ -11,7 +7,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     width: 100vw;
     height: 100vh;
     min-width: 1024px;
@@ -25,7 +21,7 @@ header img {
 
 .menu {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-weight: 400;
     margin-right: 22%;
 }
@@ -40,7 +36,6 @@ header img {
 }
 
 .main {
-    /* max-width: 1080px; */
     width:  55%;
     height: 391px;
     background-color: #FBDFDB;
@@ -60,7 +55,7 @@ header img {
 
 .main h1 {
     font-weight: 700;
-    font-family: 'Roboto';
+    font-family: Roboto;
     margin: 7% 4%;
     color: #111111 100%;
     font-size: 34px;
@@ -68,13 +63,65 @@ header img {
 }
 
 .main h2 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
-    font-family: 'Roboto-Regular';
+    font-family: Roboto;
     line-height: 24px;
     margin: 9.5% 4%;
-    width: 356px;
+    width: 316px;
     opacity: 0.7;
     color: #000000 100%;
     position: absolute;
+}
+
+#wrapper h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    color: #111111;
+    font-size: 26px;
+    margin-left: 432px;
+    margin-top: 3%;
+}
+
+.cards {
+    width: 1054px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+}
+
+.image__container img{
+    width: 334px;
+    height: 170px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.card__content {
+    color: #111111;
+    font-family: Roboto;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.card__author {
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    color: #999999;
+    font-size: 14px;
+    line-height: 62px;
+    text-align: center;
+    background: #EEEEEE;
+    position: relative;
+    margin-top: 3%;
 }
