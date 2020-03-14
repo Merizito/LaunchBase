@@ -15,7 +15,7 @@ body {
 
 header img {
     top: 32px;
-    margin: 0 432px;
+    margin: 0 22.5%;
     position: absolute;
 }
 
@@ -79,7 +79,7 @@ header img {
     font-weight: 700;
     color: #111111;
     font-size: 26px;
-    margin-left: 432px;
+    margin-left: 22.5%;
     margin-top: 3%;
 }
 
@@ -113,6 +113,25 @@ header img {
     font-size: 14px;
     margin-top: 4px;
     font-weight: 400;
+}
+
+.about h1 {
+    margin-top: 1.5%;
+    margin-left: 22.5%;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #111111;
+}
+
+.about h2 {
+    width: 55%;
+    margin-top: 1%;
+    margin-left: 22.5%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    color: #444444;
+    line-height: 28px;
 }
 
 footer {
