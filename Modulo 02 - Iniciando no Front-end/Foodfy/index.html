@@ -7,7 +7,10 @@
 
     <body>
         <header>
-            <a href="#"><img src="/images/logo.png" alt="foodfy" class="logo"></a>
+            <div class="menu-image">
+                <a href="#"><img src="/images/logo.png" alt="foodfy" class="logo"></a>
+            </div>
+
             <nav class="menu">
                 <a href="/sobre.html">Sobre</a>
                 <a href="/receitas.html">Receitas</a>
@@ -27,64 +30,64 @@
         </div>
         
         <div class="cards">
-
-            <div class="card">
+            
+            <div class="card" id="burger">
                 <div class="image__container">
                     <img src="/images/burger.png" alt="burger">
                 </div>
                 <div class="card__content">
-                    <p>Triplo bacon burger</p>
+                    <p id="title">Triplo bacon burger</p>
                     <p class="card__author">por Jorge Relato</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="pizza">
                 <div class="image__container">
                     <img src="/images/pizza.png" alt="pizza">
                 </div>
 
                 <div class="card__content">
-                    <p>Pizza 4 estações</p>
+                    <p id="title">Pizza 4 estações</p>
                     <p class="card__author">por Fabiana Melo</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="espaguete">
                 <div class="image__container">
                     <img src="/images/espaguete.png" alt="espaguete">
                 </div>
                 <div class="card__content">
-                    <p>Espaguete ao alho</p>
+                    <p id="title">Espaguete ao alho</p>
                     <p class="card__author">por Júlia Kinoto</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="lasanha">
                 <div class="image__container">
                     <img src="/images/lasanha.png" alt="lasanha">
                 </div>
                 <div class="card__content">
-                    <p>Lasanha mac n' cheese</p>
+                    <p id="title">Lasanha mac n' cheese</p>
                     <p class="card__author">por Juliano Vieira</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="doce">
                 <div class="image__container">
                     <img src="/images/doce.png" alt="doce">
                 </div>
                 <div class="card__content">
-                    <p>Docinhos pão-do-céu</p>
+                    <p id="title">Docinhos pão-do-céu</p>
                     <p class="card__author">por Ricardo Golvea</p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" id="asinhas">
                 <div class="image__container">
                     <img src="/images/asinhas.png" alt="asinhas">
                 </div>
                 <div class="card__content">
-                    <p>Asinhas de frango ao barbecue</p>
+                    <p id="title">Asinhas de frango ao barbecue</p>
                     <p class="card__author">por Vania Steroski</p>
                 </div>
             </div>
@@ -94,5 +97,24 @@
         <footer>
             <p>Todos direitos reservados, receitas Foodfy.</p>
         </footer>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                
+                <div class="modal-content">
+                    <img src="" alt="">
+                    <h1 id="modal-title"></h1>
+                    <h2 id="modal-author"></h2>
+                </div>
+
+                <div class="close-modal">
+                    <p>Fechar modal</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
     </body>
 </html>
