@@ -1,0 +1,237 @@
+:root {
+    --color-green: #50fa7b;
+    --color-rocket: #7159c1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #333;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+
+.links a:hover {
+    color: var(--color-green);
+    transition: color 200ms;
+}
+
+.main {
+    text-align: center;
+}
+
+.main img {
+    height: 300px;
+    border: 4px solid rgba(124, 106, 106, 0.219);
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.main h1 {
+    margin-bottom: 6px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.main h2 {
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.main p {
+    margin-bottom: 6px;
+    line-height: 8px;
+}
+
+.main ul {
+    list-style-type: upper-roman;
+}
+
+#footer {
+    /* padding-top: 20px; */
+    margin: 60px auto;
+}
+
+#footer a {
+    border-bottom: 2px solid #5e4eee;
+}
+
+#footer a:hover {
+    border-bottom: 2px solid var(--color-green);
+    transition: 200ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+/*=== CARDS ===*/
+
+.cards {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(580px, auto);
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid rgba(124, 106, 106, 0.129);
+    border-radius: 10px;
+    background-color: #282a36;
+    filter: brightness(90%);
+    text-align: center;
+}
+
+.card__img-container img {
+    margin-top: 24.5%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+    background-color: var(--color-rocket);
+    padding: 3px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+#starter:hover {
+    border: 2px solid #7159C1;
+    border-radius: 10px;
+    transition: border 200ms;
+}
+
+#launchbase:hover {
+    border: 2px solid #FD951F;
+    border-radius: 10px;
+    transition: border 200ms;
+}
+
+#gostack.card:hover {
+    border: 2px solid #04D361;
+    border-radius: 10px;
+    transition: border 200ms;
+}
+
+
+/*=== MODAL OVERLAY ===*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #282a36;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    transition: width 600ms;
+    transition: height 600ms;
+    transition: margin 600ms;
+}
+
+.close-modal {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.close-modal:hover {
+    filter: brightness(100%);
+}
+
+.close-modal i {
+    font-size: 30px;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    margin: 5vh auto;
+}
+
+.maximize-modal {
+    color: white;
+    position: absolute;
+    right: 12px;
+    top: 95.3%;
+    cursor: pointer;
+    filter: brightness(80%);   
+}
+
+.maximize-modal:hover {
+    filter: brightness(100%);
+}
+
+.maximize-modal i {
+    font-size: 40px;
+}
+
+/*=== MODAL ACTIVE ===*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 900ms;
+}
+
+/*=== MAXIMIZE ACTIVE ===*/
+
+.modal.maximize {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    transition: width 600ms;
+    transition: height 600ms;
+    transition: margin 600ms;
+}
